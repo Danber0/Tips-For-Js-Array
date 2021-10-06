@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Usefull</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+            </div> 
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs__btns">
+                    <button class="tabs__btn is-active">length</button>
+                    <button class="tabs__btn">push</button>
+                    <button class="tabs__btn">shift</button>
+                    <button class="tabs__btn">pop</button>
+                    <button class="tabs__btn">unshift</button>
+                    <button class="tabs__btn">delete</button>
+                    <button class="tabs__btn">slice</button>
+                    <button class="tabs__btn">splice</button>
+                    <button class="tabs__btn">concat</button>
+                    <button class="tabs__btn">indexOf</button>
+                    <button class="tabs__btn">LastIndexOf</button>
+                    <button class="tabs__btn">includes</button>
+                    <button class="tabs__btn">find</button>
+                    <button class="tabs__btn">findIndex</button>
+                    <button class="tabs__btn">filter</button>
+                    <button class="tabs__btn">sort</button>
+                    <button class="tabs__btn">reverse</button>
+                    <button class="tabs__btn">map</button>
+                    <button class="tabs__btn">split</button>
+                    <button class="tabs__btn">join</button>
+                    <button class="tabs__btn">isArray</button>
+                    <button class="tabs__btn">reduce</button>
+                    <button class="tabs__btn">reduceRight</button>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Свойство <span class="properties">length</span> является экземпляром типа <span class="type">Array</span>
+                                , возвращает или устанавливает длину массива к которому приминилось это свойство</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span><!--
+                                --><br><!-- 
+                                --><span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="keyword">length</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Свойство <span class="properties">push</span> добовляет 1 или более элементы в конец массива</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">arr2</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">6</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">7</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">8</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">9</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">10</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="variable">arr</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">push</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr2</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: [ 1, 2, 3, 4, 5, [ 6, 7, 8, 9, 10 ] ]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Метод <span class="properties">shift</span> удаляет первый элемент из массива и возвращает его значение. 
+                                Этот метод изменяет длину массива</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr</span><!--
+                                --><span class="punctuation">.</span><!--
+                                --><span class="punctuation">shift</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="punctuation">)</span><!--   
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: [ 2, 3, 4, 5]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Метод <span class="properties">pop()</span> удаляет последний элемент из массива и,
+                                возвращает его значение.</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr</span><!--
+                                --><span class="punctuation">.</span><!--
+                                --><span class="punctuation">pop</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="punctuation">)</span><!--   
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: [1, 2, 3, 4]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Метод <span class="properties">unshift()</span> добавляет один или более элементов в начало массива,
+                                 и возвращает новую длину массива</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr</span><!--
+                                --><span class="punctuation">.</span><!--
+                                --><span class="punctuation">unshift</span><!-- 
+                                --><span class="punctuation">(</span><!--
+                                --><span class="number">6</span><!--
+                                --><span class="punctuation">)</span><!--   
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: [6, 1, 2, 3, 4, 5]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Оператор <span class="properties">delete</span> удаляет элемент из массива(не только из массивов)</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">delete</span>
+                                    <span class="variable">arr</span><!--
+                                --><span class="punctuation">[</span><!--
+                                --><span class="number">3</span><!--
+                                --><span class="punctuation">]</span>
+                                <br>
+                                <span class="comment">// Результат: [ 1, 2, 3, <1 empty item>, 5 ]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Свойство <span class="properties">slice()</span> возвращает новый массив, 
+                                содержащий копию части исходного массива. Обращение по индексу элемента</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">check</span>
+                                <span class="punctuation">=</span> 
+                                <span class="punctuation">arr</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">slice</span><!--
+                                --><span class="punctuation">(</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                               <span class="number">2</span><!--
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">check</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Метод <span class="properties">splice()</span> изменяет содержимое массива, 
+                                удаляя существующие элементы и/или добавляя новые. 
+                                Обращение по индексу элемента</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">check</span>
+                                <span class="punctuation">=</span> 
+                                <span class="punctuation">arr</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">splice</span><!--
+                                --><span class="punctuation">(</span><!--
+                                --><span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                               <span class="number">1</span><!--
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">check</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Метод <span class="properties">concat()</span> возврощает копию массива на котором был вызван данный метод.</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">arr2</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">6</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">7</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">8</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">9</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">10</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">arr3</span>
+                                <span class="punctuation">=</span> 
+                                <span class="punctuation">arr</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">concat</span><!--
+                                --><span class="punctuation">(</span><!--
+                                --><span class="number">arr2</span><!--
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr3</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item is-active">
+                        <div class="tabs__discription">
+                            <h1>Информация о свойстве</h1>
+                            <h2>Метод <span class="properties">indexOf()</span> возвращает первый индекс, по которому данный элемент может 
+                                быть найден в массиве или -1, если такого индекса нет.</h2>
+                            <h3>Пример</h3>
+                        </div>
+                        <div class="code">
+                            <div class="code__window">
+                                <span class="keyword">let</span>
+                                <span class="variable">arr</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">1</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">2</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">3</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">4</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">5</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">arr2</span>
+                                <span class="operator">=</span>
+                                <span class="punctuation">[</span><!--
+                                --><span class="number">6</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">7</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">8</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">9</span><!--
+                                --><span class="punctuation">,</span>
+                                <span class="number">10</span><!--
+                                --><span class="punctuation">]</span><!--
+                                --><span class="punctuation">;</span>
+                                <br>
+                                <span class="keyword">let</span>
+                                <span class="variable">arr3</span>
+                                <span class="punctuation">=</span> 
+                                <span class="punctuation">arr</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">concat</span><!--
+                                --><span class="punctuation">(</span><!--
+                                --><span class="number">arr2</span><!--
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="variable">console</span><!-- 
+                                --><span class="punctuation">.</span><!-- 
+                                --><span class="punctuation">log</span><!-- 
+                                --><span class="punctuation">(</span><!-- 
+                                --><span class="variable">arr3</span><!-- 
+                                --><span class="punctuation">)</span>
+                                <br>
+                                <span class="comment">// Результат: 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tabs__item">Content 11</div>
+                    <div class="tabs__item">Content 12</div>
+                    <div class="tabs__item">Content 13</div>
+                    <div class="tabs__item">Content 14</div>
+                    <div class="tabs__item">Content 15</div>
+                    <div class="tabs__item">Content 16</div>
+                    <div class="tabs__item">Content 17</div>
+                    <div class="tabs__item">Content 18</div>
+                    <div class="tabs__item">Content 19</div>
+                    <div class="tabs__item">Content 20</div>
+                    <div class="tabs__item">Content 21</div>
+                    <div class="tabs__item">Content 22</div>
+                    <div class="tabs__item">Content 23</div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
